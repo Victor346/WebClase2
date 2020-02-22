@@ -5,11 +5,34 @@
         <meta charset="utf-8">
         <meta name="author" content="Fernando Rios">
         <meta name="description" content="Practica 1">
-        <link rel="stylesheet" href="/styles/styles.css">
+        <link rel="stylesheet" type="text/css" href="/styles/styles.css">
         <!-- Iconito del tab, necesita ser .ico-->
         <link rel="shortcut icon" href="img/kirby2.ico">
     </head>
     <body>
+        <h1>Trabajo en equipo clase 2</h1>
+        <h2>Codigo tentativo</h2>
+        Utilizaremos este codigo para conectarnos a la API de Google para realizar rutas.
+        <code>
+            <pre>
+                const client = new Client({});
+
+                client
+                .elevation({
+                    params: {
+                    locations: [{ lat: 45, lng: -110 }],
+                    key: process.env.GOOGLE_MAPS_API_KEY
+                    },
+                    timeout: 1000 // milliseconds
+                }, axiosInstance)
+                .then(r => {
+                    console.log(r.data.results[0].elevation);
+                })
+                .catch(e => {
+                    console.log(e);
+                });
+            </pre>
+        </code>
 
         <!-- Citas -->
         <blockquote cite="https://0-ebookcentral-proquest-com.biblioteca-ils.tec.mx/lib/consorcioitesmsp/reader.action?docID=3219980">
