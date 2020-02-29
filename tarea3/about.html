@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Trabajo en equipo 3</title>
@@ -20,7 +20,7 @@
                     <span class="reciclaggio">Reciclaggio</span>
                 </button>
 
-                <span class="reciclaggio hide-responsive">Reciclaggio</span>
+                <span class="reciclaggio">Reciclaggio</span>
 
                 <div class="collapse navbar-collapse" id="Navbar">
                     <ul class="navbar-nav mr-auto">
@@ -31,7 +31,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./about.html">
+                            <a class="nav-link active">
                                 Acerca De
                             </a>
                         </li>
@@ -45,7 +45,7 @@
                                 Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active">
+                            <a class="nav-link" href="./newsletters.html">
                                 Newsletters</a>
                         </li>
                     </ul>
@@ -54,56 +54,29 @@
         </nav>
 
         <div class="container">
+            <div class="row">
+               <p></p>
+            </div>
             <div class="row row-content">
-                <div class="col-12">
-                    <form>
-                        <div class="form-group row">
-                            <label for="firstname" class="col-md-2 col-form-label">Nombre</label>
-                            <div class="col-md-10">
-                                <input type="text" class="form-control" id="firstname" 
-                                    name="firstname" placeholder="Nombre">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="birthday" class="col-md-2 col-form-label">Cumpleaños</label>
-                            <div class="col-md-10">
-                                <input type="date" class="form-control" id="birthday" 
-                                    name="birthday" placeholder="Cumpleaños">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="country" class="col-md-2 col-form-label">Pais</label>
-                            <div class="col-md-10">
-                                <input type="text" class="form-control" id="country" 
-                                    name="country" placeholder="Pais">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="emailid" class="col-md-2 col-form-label">Email</label>
-                            <div class="col-md-10">
-                                <input type="email" class="form-control" id="enailid" 
-                                    name="emailid" placeholder="E-mail">
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="message" class="col-md-2 col-form-label">Tu Mensaje</label>
-                            <div class="col-md-10">
-                                <textarea class="form-control" id="message" 
-                                    name="message" rows="12"></textarea>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="offset-md-2 col-md-10">
-                                <button type="submit" class="btn btn-primary">
-                                    Mandar Mensaje
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+                <div class="col-12 col-md-8">
+                    <p class="info-text">El problema que nuestro sistema busca resolver es el reciclaje que existe en la cdmx. Existe la problemática de desechar y reciclar electrodomésticos grandes y mueblería. Hay falta de eficiencia acerca de los sistemas de reciclaje, donde la persona que necesita reciclar sus desechos, tienen que esperar mucho tiempo o no saben cuando llega el camión de reciclaje.  </p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="./img/camion.jpg" class="img-fluid">
                 </div>
             </div>
-        </div>
 
-    </body>
-</html>
+            <div class="row row-content">
+                <div class="col-12 col-md-4">
+                    <img src="./img/arbolito.png" class="img-fluid info-img">
+                </div>
+                <div class="col-12 col-md-8">
+                    <p class="info-text">
+                        La forma en la que pensamos solucionar esta problemática es a través de la creación de una aplicación web que permita conectar a usuarios interesados en reciclar de sus deshechos de una forma responsable con otros usuarios que brinden servicios de reciclaje (como lo serían plantas de reciclaje) o que brinden servicios de transporte de este tipo de deshechos. 
+                    </p>
+
+                </div>
+            </div>
+            
+
+        </div>
