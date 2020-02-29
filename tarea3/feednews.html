@@ -8,13 +8,14 @@
         <link rel="stylesheet" href="css/styles.css">
         <link rel="shortcut icon" href="img/white_cat.ico">
         <link rel="stylesheet" type="text/css" href="css/carousel.css">
+        <link rel="stylesheet" type="text/css" href="css/cards.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </head>
     <body>
-        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top" style="position: relative;">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                     <span class="navbar-toggler-icon"></span>
@@ -32,7 +33,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./about.html">
+                            <a class="nav-link" href="/about.html">
                                 Acerca De
                             </a>
                         </li>
@@ -49,48 +50,44 @@
                             <a class="nav-link" href="./newsletters.html">
                                 Newsletters</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./feednews.html">
+                                News</a>
+                        </li>
                     </ul>
                 </div>   
             </div>
         </nav>
 
-        <div id="carouselExampleCaptions" class="carousel slide img-fluid" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner ">
-              <div class="carousel-item active">
-                <img src="img/person1.jpg" class="d-block h-100 img-center" alt="ling ling">
-                <div class="carousel-caption d-md-block">
-                  <h5>Ling Ling</h5>
-                  <p>Despues de deshacerme de mis muebles viejos, ahora tengo mucho mas espacio en mi casa gracias a Riciclaggio</p>
+        <h1 class="text-center text-margin-30">News</h1>
+
+        <div class="card-deck">
+            <div class="card" style="width: 25rem;">
+                <img src="img/reciclaje.jpg" class="card-img-top img-fluid" alt="clean-home">
+                <div class="card-body">
+                    <h5 class="card-title">Personas contentas</h5>
+                    <p class="card-text">Muchas personas estan contentos de sus casa limpias por el uso de Riciclaggio</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <img src="img/person2.jpg" class="d-block h-100 img-center" alt="sarah">
-                <div class="carousel-caption d-md-block">
-                  <h5>Sarah</h5>
-                  <p>Todos mis problemas de muebles viejo se solucion&oacute;. Gracias Riciclaggio!</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="img/person3.jpg" class="d-block h-100 img-center" alt="terry">
-                <div class="carousel-caption d-md-block">
-                  <h5>Terry</h5>
-                  <p>Puedo ahorrar gasolina usando Riciclaggio y mi trabajo se a vuelto mas f&aacute;cil</p>
-                </div>
-              </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
+            <div class="card" style="width: 25rem;">
+                <img src="img/reciclaje.png" class="card-img-top img-fluid" alt="recycle-car">
+                <div class="card-body">
+                    <h5 class="card-title">Circulacion de rapida</h5>
+                    <p class="card-text">El servicio de reciclaje de muebles viejos se vuelve mas rapida gracias a Riciclaggio</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 25rem;">
+                <img src="img/employees.jpg" class="card-img-top img-fluid" alt="employees">
+                <div class="card-body">
+                    <h5 class="card-title">Empreados contentos</h5>
+                    <p class="card-text">Empreados de reciclaje contento por su eficiencia en el trabajo al usar Riciclaggio</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        
     </body>
 </html>
